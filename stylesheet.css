@@ -1,0 +1,122 @@
+/*@media screen and (min-width:100px) and (max-width:200px) {
+    body { font-weight:bold; color:#555; }
+}*/
+
+    .attribution { font-size: 11px; text-align: center; background-color: white; padding: 1rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+}
+.container {
+    background-color:  hsl(185, 75%, 39%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    
+    /* Code for the background icons */
+    background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -43.75rem -31.25rem, 12.5rem 21.875rem;
+}
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 20.375rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.card-header {
+    background-image: url('images/bg-pattern-card.svg');
+    background-size: cover;
+    height: 8.75rem;
+}
+.card-body-image {
+    height: 6rem;
+    width: 6rem;
+    border: 0.313rem solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -3rem auto 1.5rem auto;
+}
+.image {
+    width: 100%;
+}
+span, 
+p {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.063rem solid hsl(0, 0%, 59%);
+    padding: 0.5rem 1.125rem;
+}
+.card-body-text {
+    padding: 0 1.25rem .5rem;
+    line-height: 0.5;
+}
+
+
+.circles {
+    position: absolute;
+    z-index: 1;
+}
+.top-circle {
+    top: -233%;
+    left: -175%;
+}
+.bottom-circle {
+    bottom: -233%;
+    right: -175%;
+}
+.card-footer-text {
+    line-height: 0.4;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+       background-position: -38.75rem -31.25rem, 18.75rem 21.875rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        
+        background-position: -30rem -34.375rem, 21.875rem 23.75rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container {
+        background-position: -23.75rem -34.375rem, 30rem 20.625rem;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .container {
+        background-position: -20rem -34.375rem, 34.375rem 20rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .container {
+        background-position: -16.25rem -34.375rem, 40.625rem 18.75rem;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .container {
+        background-position: -11.25rem -34.375rem, 46.875rem 18.75rem;
+    }
+}
